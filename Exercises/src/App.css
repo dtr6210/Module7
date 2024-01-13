@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+.NavBar {
+  background-color: #60665e;
+}
+
+.NavBar ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.NavBar li {
+  float: left; 
+}
+
+.NavBar li a {
+  display: block;
+  color: white; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.NavBar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.NavBar li a.active {
+  background-color: #040aaa;
+  color: white;
+}
