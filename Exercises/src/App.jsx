@@ -5,6 +5,8 @@ import "./App.css";
 import BitcoinRates from "./components/BitcoinRates";
 import { MoodProvider } from "./context/MoodContext";
 import Emoji from "./components/Emoji";
+import AppRoutes from "./routes/AppRoutes";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,8 +14,10 @@ function App() {
   return (
     <>
       <MoodProvider>
-        <BitcoinRates />
-        <Emoji />
+        <NavBar />
+        <AppRoutes />
+        {/* <BitcoinRates />
+        <Emoji /> */}
       </MoodProvider>
     </>
   );

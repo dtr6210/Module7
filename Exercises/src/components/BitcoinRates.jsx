@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useBitcoinPrice } from "../hooks/useBitcoinPrice";
 import { useMoodContext } from "../context/MoodContext";
+import Emoji from "./Emoji";
 
 function BitcoinRates() {
   const currencies = ["USD", "AUD", "NZD", "GBP", "EUR", "SGD"];
@@ -39,9 +40,7 @@ function BitcoinRates() {
   return (
     <div>
       <h3>Bitcoin Exchange Rate</h3>
-      <div>
-        Current Mood: {mood}
-      </div>
+      <div>Current Mood: {mood}</div>
       <label>
         Choose currency:
         <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
@@ -51,6 +50,9 @@ function BitcoinRates() {
       <div>
         <strong>Current Price: </strong>
         {bitcoinPrice} {currency}
+      </div>
+      <div>
+        <Emoji />
       </div>
     </div>
   );
